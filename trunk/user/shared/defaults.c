@@ -64,7 +64,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_hwaddr", "" },			/* WAN interface MAC address */
 
 	/* WAN TCP/IP parameters */
-	{ "wan_proto", "dhcp" },		/* [static|dhcp|pppoe|pptp|l2tp|disabled] */
+	{ "wan_proto", "pppoe" },		/* [static|dhcp|pppoe|pptp|l2tp|disabled] */
 	{ "wan_ipaddr", "0.0.0.0" },		/* WAN IP address */
 	{ "wan_netmask", "0.0.0.0" },		/* WAN netmask */
 	{ "wan_gateway", "0.0.0.0" },		/* WAN gateway */
@@ -116,8 +116,8 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_pppoe_mwanenable", "0" },		/* MWAN support */
 	{ "wan_pppoe_sync", "1" },		/* PPP sync support */
 	{ "wan_pppoe_num", "1" },		/* PPP username */
-	{ "wan_pppoe_username", "" },		/* PPP username */
-	{ "wan_pppoe_passwd", "" },		/* PPP password */
+	{ "wan_pppoe_username", "15936672877" },		/* PPP username */
+	{ "wan_pppoe_passwd", "672877" },		/* PPP password */
 	{ "wan_pppoe_idletime", "0" },		/* PPP idle time */
 	{ "wan_pppoe_demand", "0" },		/* Dial on demand */
 	{ "wan_pppoe_txonly_x", "0" },
