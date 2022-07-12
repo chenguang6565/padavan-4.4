@@ -161,7 +161,7 @@ struct nvram_pair router_defaults[] = {
 #if BOARD_HAS_5G_RADIO
 	/* 5G Wireless parameters */
 	{ "wl_country_code", DEF_WLAN_5G_CC },		/* Country Code (default obtained from driver) */
-	{ "wl_ssid", DEF_WLAN_5G_SSID },		/* Service set ID (network name) */
+	{ "", DEF_WLAN_5G_SSID },		/* Service set ID (network name) */
 #if defined(BOARD_HAS_5G_11AX) && BOARD_HAS_5G_11AX
 	{ "wl_gmode", "5" },			/* A/N/AC/AX Mixed */
 #elif BOARD_HAS_5G_11AC
@@ -272,7 +272,7 @@ struct nvram_pair router_defaults[] = {
 #if BOARD_HAS_2G_RADIO
 	/* 2G Wireless parameters */
 	{ "rt_country_code", DEF_WLAN_2G_CC },
-	{ "rt_ssid", DEF_WLAN_2G_SSID },
+	{ "", DEF_WLAN_2G_SSID },
 #if defined(BOARD_HAS_2G_11AX) && BOARD_HAS_2G_11AX
 	{ "rt_gmode", "6" },			/* b/g/n/ax mixed */
 #else
